@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.austin.thelogoquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Guess that Game"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MenuActivity"
+            android:label="Guess that Game">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GameActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+        </activity>
+
+        <activity android:name=".SettingsActivity">
+
+        </activity>
+        <activity android:name=".WebpageActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+        </activity>
+        <activity
+            android:name=".imgScratch"
+            android:label="imgScratch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu1Scratch"
+            android:label="menu1Scratch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rbScratch"
+            android:label="rbScratch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menu2Scratch">
+
+        </activity>
+
+    </application>
+
+</manifest>
