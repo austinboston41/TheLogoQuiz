@@ -18,7 +18,9 @@ import android.widget.Toast;
 public class MenuActivity extends Activity {
     Button butPlay;
     MediaPlayer mpMusic;
-    int nScore;
+
+
+
 
     public void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
@@ -36,9 +38,9 @@ public class MenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Intent mIntent = getIntent();
-        int nScore1 = mIntent.getIntExtra("nScore", 0);
+        int nScore = mIntent.getIntExtra("nScore", 0);
         TextView tvScore1 = (TextView) findViewById(R.id.tvScore1);
-        tvScore1.setText("Score: " + Integer.toString(nScore1));
+        tvScore1.setText("Score: " + Integer.toString(nScore));
         butPlay = (Button) findViewById(R.id.butPlay);
         butPlay.setOnClickListener(new View.OnClickListener(){
 
@@ -46,6 +48,7 @@ public class MenuActivity extends Activity {
             public void onClick(View v){
                 Intent nextScreen=new Intent(getApplicationContext(), GameActivity.class);
                 startActivity(nextScreen);
+                
 
 
             }

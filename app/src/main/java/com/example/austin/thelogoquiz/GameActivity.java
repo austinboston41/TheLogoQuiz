@@ -2,6 +2,7 @@ package com.example.austin.thelogoquiz;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import java.util.HashMap;
 
 public class GameActivity extends Activity {
+
     Button butSubmit;
     RadioButton rb1, rb2, rb3, rb4;
     String sToast;
@@ -82,45 +84,60 @@ public class GameActivity extends Activity {
             butSubmit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    i++;
-                    Toast toCred;
-                    if (bChecked = true) {
-                        if (nAns == nGuess) {
-                            sToast = "✓";
-                        } else {
-                            sToast = "✗";
+
+                        i++;
+                        Toast toCred;
+                        if (bChecked = true) {
+                            if (nAns == nGuess) {
+                                sToast = "✓";
+                                nScore++;
+                            } else {
+                                sToast = "✗";
+                            }
+                        }
+                        toCred = Toast.makeText(GameActivity.this, sToast, Toast.LENGTH_SHORT);
+                        toCred.show();
+                    if(i<6) {
+                        Resources res = getResources();
+                        String[] srb1 = res.getStringArray(R.array.rb1);
+                        String[] srb2 = res.getStringArray(R.array.rb2);
+                        String[] srb3 = res.getStringArray(R.array.rb3);
+                        String[] srb4 = res.getStringArray(R.array.rb4);
+                        rb1.setChecked(false);
+                        rb2.setChecked(false);
+                        rb3.setChecked(false);
+                        rb4.setChecked(false);
+                        rb1.setText(srb1[i]);
+                        rb2.setText(srb2[i]);
+                        rb3.setText(srb3[i]);
+                        rb4.setText(srb4[i]);
+                        if (i == 1) {
+                            image.setImageResource(R.drawable.i2);
+                            nAns = i + 1;
+                        }
+                        if (i == 2) {
+                            image.setImageResource(R.drawable.i3);
+                            nAns = i + 1;
+                        }
+                        if (i == 3) {
+                            image.setImageResource(R.drawable.i4);
+                            nAns = i + 1;
+
+                        }
+                        if (i == 4) {
+                            image.setImageResource(R.drawable.i5);
+                            nAns =1;
+                        }
+                        if (i == 5) {
+                            image.setImageResource(R.drawable.i6);
+                            nAns =2;
                         }
                     }
-                    toCred = Toast.makeText(GameActivity.this, sToast, Toast.LENGTH_SHORT);
-                    toCred.show();
-                    Resources res = getResources();
-                    String[] srb1 = res.getStringArray(R.array.rb1);
-                    String[] srb2 = res.getStringArray(R.array.rb2);
-                    String[] srb3 = res.getStringArray(R.array.rb3);
-                    String[] srb4 = res.getStringArray(R.array.rb4);
-                    rb1.setChecked(false);
-                    rb2.setChecked(false);
-                    rb3.setChecked(false);
-                    rb4.setChecked(false);
-                    nAns = i + 1;
-                    rb1.setText(srb1[i]);
-                    rb2.setText(srb2[i]);
-                    rb3.setText(srb3[i]);
-                    rb4.setText(srb4[i]);
-                    if (i == 1) {
-                        image.setImageResource(R.drawable.i2);
-                    }
-                    if (i == 2) {
-                        image.setImageResource(R.drawable.i3);
-                    }
-                    if (i == 3) {
-                        image.setImageResource(R.drawable.i4);
-                    }
-                    if (i == 4) {
-                        image.setImageResource(R.drawable.i5);
-                    }
-                    if (i == 5) {
-                        image.setImageResource(R.drawable.i6);
+                    if(i>=6) {
+                        Intent nextScreen = new Intent(getApplicationContext(), MenuActivity.class);
+                        nextScreen.putExtra("nScore", nScore);
+                        startActivity(nextScreen);
+                        finish();
                     }
 
                 }
