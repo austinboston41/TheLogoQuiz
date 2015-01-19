@@ -95,7 +95,7 @@ Dec 8:
 
 
 Dec 9:
-        This update has broken Dannys gradle
+        This update has broken Danny's gradle
         and what Austin did to fix his issues did not solve Danny's problems.
 
 Dec 10:
@@ -111,4 +111,36 @@ Dec 12
 Dec 15:
         Danny's computer is a hunk of shit.
         Also I got the menu working and I didn't feel like reading so I made a settings activity.
+
+Dec 16:
+        Put scratches in settings.
+
+Dec 17:
+        Added score.
+
+Dec 19:
+        Removed scratches from settings, made separate projects for each scratch.
+
+Jan 6:
+        Added sound.
+
+Jan 7:
+        Added images for next levels.
+
+Jan 9:
+        Scratches are in their own packages now.
+
+Jan 12:
+        Added XML.
+
+Jan 13:
+        Added better music. Added HTML.
+
+Jan 14/15:
+        Worked on powerpoint.
+
+Jan 19:
+        Fixed score.
+
+
 
