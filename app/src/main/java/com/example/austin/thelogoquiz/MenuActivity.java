@@ -48,7 +48,7 @@ public class MenuActivity extends Activity {
             public void onClick(View v){
                 Intent nextScreen=new Intent(getApplicationContext(), GameActivity.class);
                 startActivity(nextScreen);
-                
+
 
 
             }
