@@ -1,0 +1,23 @@
+We used very different ways of doing things than everyone else in the class.
+Some other groups used some similar ways of doing things, but none seemed quite like us.
+XML:
+To get xml file i/o you need to add data to an xml file such as the pre-made strings.xml
+you add the data like so:    <string-array name="Scratch">
+                                 <item>you</item>
+                                 <item>are</item>
+                                 <item>such</item>
+                                 <item>a</item>
+                                 <item>scrub</item>
+                             </string-array>
+You then get the resources and call the array like so:
+ Resources res = getResources();
+
+After you have got the resources you can make a string array to grad the data:
+ String[] arsScratch = res.getStringArray(R.array.Scratch);
+
+Then finally once you have the string array,
+you can set a textview to display the current index of the string:
+
+ tvText.setText(arsScratch[i]);
+
+ That is how you use an XML file to store data.

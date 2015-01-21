@@ -1,0 +1,6 @@
+Disclaimer:
+
+- You can't select the same button two levels in a row. You must select a different button, then go back to it first.
+
+- Multiple menu activities are made rather than going back to the original.
+    -sound will continue playing on the original menu and will not stop unless you go back to it and stop it there

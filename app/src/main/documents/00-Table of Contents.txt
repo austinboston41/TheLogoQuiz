@@ -1,0 +1,29 @@
+Table of Contents
+
+Game(run "app" next to run button):
+
+MenuActivity
+GameActivity
+SettingsActivity
+WebpageActivity
+
+Scratch 1:
+
+imgScratch(run this)
+
+Scratch 2:
+
+menu1Scratch(run this)
+menu2Scratch
+
+Scratch 3:
+
+rbScratch(run this)
+
+Scratch 4:
+
+xmlScratch(run this)
+
+Documents and Powerpoint:
+
+All within documents folder in order

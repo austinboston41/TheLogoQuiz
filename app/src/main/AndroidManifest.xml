@@ -29,6 +29,15 @@
 
         </activity>
         <activity
+            android:name=".xmlScratch"
+            android:label="xmlScratch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".imgScratch"
             android:label="imgScratch">
             <intent-filter>
@@ -58,6 +67,7 @@
         <activity android:name=".menu2Scratch">
 
         </activity>
+
 
     </application>
 

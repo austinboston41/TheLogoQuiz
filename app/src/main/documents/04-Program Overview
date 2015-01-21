@@ -1,0 +1,5 @@
+In our game you select a level and then you press play to start a quiz.
+We then bring you to the quiz screen where you view a logo and then,
+you select a RadioButton that you think is the name of that logo and press choose answer.
+You will go through this process until the end of the level,
+in which you will be taken back to the menu screen and shown your score.
