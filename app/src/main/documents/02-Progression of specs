@@ -1,0 +1,14 @@
+Initial Specs:
+
+0.1 - Have text on screen
+0.2 - display a picture with text
+0.3 - Have input for text
+1.0 - Match users input with the picture
+2.0 - Create a menu screen
+2.1 - Add in multiple levels (a set of pictures)
+3.0 - Add multiple levels (folders of pictures)
+4.0 - Add a score counter
+4.1 - GUI for score counter
+5.0 - Attempt to incorporate hints (final release goal)
+6.0 - Add in the letters of the word/picture scrambled for the user to solve
+6.1 - Rather that use a strin use pictures for each letter
