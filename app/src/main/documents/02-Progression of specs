@@ -11,4 +11,15 @@ Initial Specs:
 4.1 - GUI for score counter
 5.0 - Attempt to incorporate hints (final release goal)
 6.0 - Add in the letters of the word/picture scrambled for the user to solve
-6.1 - Rather that use a strin use pictures for each letter
+6.1 - Rather that use a string use pictures for each letter
+
+
+Final Specs:
+
+1.0 - Basic Plumbing
+2.0 - Functional Menu
+3.0 - Add a game activity
+4.0 - Add radio buttons, toasts, etc.
+5.0 - Add score
+6.0 - Add XML
+7.0 - Add more levels
